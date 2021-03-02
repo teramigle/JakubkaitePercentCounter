@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#62B961">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:text="@string/app_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        style="@style/text"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"/>
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount"
+        android:autofillHints="@string/enter_amount"
+        android:background="#FACB28"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:fontFamily="serif" />
+
+    <LinearLayout
+        android:id="@+id/percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/percent"
+            android:gravity="end"
+            style="@style/text"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="100" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/tip"
+            android:gravity="end"
+            style="@style/text"/>
+
+        <TextView
+            android:id="@+id/tipOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:fontFamily="serif"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/total"
+            android:gravity="end"
+            style="@style/text"/>
+
+        <TextView
+            android:id="@+id/totalOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:fontFamily="serif"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/yellow"
+        android:layout_margin="15dp"
+        android:text="@string/result"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:fontFamily="serif"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vardas_pavarde"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:fontFamily="serif"/>
+
+</LinearLayout>
